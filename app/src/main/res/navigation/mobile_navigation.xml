@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.bersiiiiii.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigation_home_to_product_bath"
+            app:destination="@id/product_bath" />
+        <action
+            android:id="@+id/action_navigation_home_to_product_food"
+            app:destination="@id/product_cook" />
+        <action
+            android:id="@+id/action_navigation_home_to_product_baby"
+            app:destination="@id/product_baby" />
+        <action
+            android:id="@+id/action_navigation_home_to_product_breakfast"
+            app:destination="@id/product_breakfast" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_message"
+        android:name="com.example.bersiiiiii.ui.dashboard.MessageFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_dashboard" >
+        <action
+            android:id="@+id/action_navigation_message_to_notification"
+            app:destination="@id/notification" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_cart"
+        android:name="com.example.bersiiiiii.ui.notifications.CartFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_cart" />
+    <fragment
+        android:id="@+id/navigation_activity"
+        android:name="com.example.bersiiiiii.navigation_activity"
+        android:label="fragment_navigation_activity"
+        tools:layout="@layout/fragment_activity" />
+    <fragment
+        android:id="@+id/product_bath"
+        android:name="com.example.bersiiiiii.product_bath"
+        android:label="fragment_product_bath"
+        tools:layout="@layout/fragment_product_bath" />
+    <fragment
+        android:id="@+id/product_cook"
+        android:name="com.example.bersiiiiii.product_food"
+        android:label="fragment_product_food"
+        tools:layout="@layout/fragment_product_cook" />
+    <fragment
+        android:id="@+id/product_baby"
+        android:name="com.example.bersiiiiii.product_baby"
+        android:label="fragment_product_baby"
+        tools:layout="@layout/fragment_product_baby" />
+    <fragment
+        android:id="@+id/product_breakfast"
+        android:name="com.example.bersiiiiii.product_breakfast"
+        android:label="fragment_product_breakfast"
+        tools:layout="@layout/fragment_product_breakfast" />
+    <fragment
+        android:id="@+id/notification"
+        android:name="com.example.bersiiiiii.notification"
+        android:label="fragment_notification"
+        tools:layout="@layout/fragment_notification" />
+</navigation>

@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyProfile">
+
+    <ImageView
+        android:id="@+id/arrowbtnchangepass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="159dp"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_arrow_back_ios" />
+
+    <ImageView
+        android:id="@+id/arrowbtnprivacy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/arrowbtnchangepass"
+        app:srcCompat="@drawable/ic_arrow_back_ios" />
+
+    <Button
+        android:id="@+id/logoutbtnprfl"
+        android:layout_width="0dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="45dp"
+        android:backgroundTint="@color/white"
+        android:text="Log Out"
+        android:textColor="@color/MainRed"
+        app:cornerRadius="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeColor="@color/MainRed"
+        app:strokeWidth="1dp" />
+
+    <TextView
+        android:id="@+id/HelpTxt"
+        android:layout_width="215dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="57dp"
+        android:text="@string/help_support"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        app:layout_constraintStart_toEndOf="@+id/helpico"
+        app:layout_constraintTop_toBottomOf="@+id/generaltxt" />
+
+    <TextView
+        android:id="@+id/PrivaccyPolicyTxt"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="44dp"
+        android:text="Privacy Policy"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="@+id/HelpTxt"
+        app:layout_constraintEnd_toEndOf="@+id/ChangePassTxt"
+        app:layout_constraintStart_toEndOf="@+id/generaltxt"
+        app:layout_constraintTop_toBottomOf="@+id/changepassico" />
+
+    <TextView
+        android:id="@+id/generaltxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:text="General"
+        android:textColor="@color/black"
+        android:textSize="10dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/changepassico"
+        app:layout_constraintTop_toBottomOf="@+id/changepassico" />
+
+    <ImageView
+        android:id="@+id/userprofilemyprofile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="1dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtWelcomeMyProfile"
+        app:srcCompat="@drawable/ic_profil" />
+
+    <TextView
+        android:id="@+id/MyProfileTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="My Profile"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/txtWelcomeMyProfile"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="@+id/txtWelcomeMyProfile"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/bckbtnprofile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/userprofilemyprofile"
+        app:layout_constraintStart_toStartOf="@+id/userprofilemyprofile"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_arrow_left" />
+
+    <TextView
+        android:id="@+id/txtWelcomeMyProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="12dp"
+        android:text="Welcome"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/userprofilemyprofile"
+        app:layout_constraintTop_toBottomOf="@+id/MyProfileTxt" />
+
+    <TextView
+        android:id="@+id/emailprofile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="email profile"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/txtWelcomeMyProfile"
+        app:layout_constraintTop_toBottomOf="@+id/txtWelcomeMyProfile" />
+
+    <ImageView
+        android:id="@+id/editprofileico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_edit" />
+
+    <TextView
+        android:id="@+id/Accounttxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="30dp"
+        android:text="Account"
+        android:textColor="@color/black"
+        android:textSize="10dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userprofilemyprofile" />
+
+    <TextView
+        android:id="@+id/ChangePassTxt"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="1dp"
+        android:text="Change Password"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="@+id/arrowbtnchangepass"
+        app:layout_constraintEnd_toEndOf="@+id/HelpTxt"
+        app:layout_constraintStart_toEndOf="@+id/Accounttxt"
+        app:layout_constraintTop_toTopOf="@+id/changepassico" />
+
+    <ImageView
+        android:id="@+id/changepassico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        app:layout_constraintStart_toStartOf="@+id/Accounttxt"
+        app:layout_constraintTop_toBottomOf="@+id/Accounttxt"
+        app:srcCompat="@drawable/ic_fluent_key_32_regular" />
+
+    <ImageView
+        android:id="@+id/privacyico"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/PrivaccyPolicyTxt"
+        app:layout_constraintEnd_toEndOf="@+id/helpico"
+        app:layout_constraintStart_toStartOf="@+id/generaltxt"
+        app:layout_constraintTop_toTopOf="@+id/PrivaccyPolicyTxt"
+        app:srcCompat="@drawable/ic_shield_done" />
+
+    <ImageView
+        android:id="@+id/helpico"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/HelpTxt"
+        app:layout_constraintEnd_toEndOf="@+id/changepassico"
+        app:layout_constraintStart_toStartOf="@+id/generaltxt"
+        app:layout_constraintTop_toTopOf="@+id/HelpTxt"
+        app:srcCompat="@drawable/ic_vector_2" />
+
+    <ImageView
+        android:id="@+id/arrowbtnhelp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="@+id/arrowbtnprivacy"
+        app:layout_constraintTop_toBottomOf="@+id/arrowbtnprivacy"
+        app:srcCompat="@drawable/ic_arrow_back_ios" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

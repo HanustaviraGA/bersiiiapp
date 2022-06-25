@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.dashboard.MessageFragment">
+
+    <TextView
+        android:id="@+id/updatetxtupdt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="61dp"
+        android:text="Update"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Notificationtxtupdt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:text="Notification"
+        android:textColor="@color/black"
+        app:layout_constraintBaseline_toBaselineOf="@+id/updatetxtupdt"
+        app:layout_constraintStart_toEndOf="@+id/updatetxtupdt" />
+
+    <TextView
+        android:id="@+id/Messagetxtupdt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Message"
+        android:textColor="@color/black"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/underlinegreenupdt"
+        android:layout_width="0dp"
+        android:layout_height="3dp"
+        android:background="@color/MainGreen"
+        app:layout_constraintBottom_toBottomOf="@+id/updatetxtupdt"
+        app:layout_constraintEnd_toEndOf="@+id/updatetxtupdt"
+        app:layout_constraintStart_toStartOf="@+id/updatetxtupdt"
+        app:layout_constraintTop_toBottomOf="@+id/updatetxtupdt" />
+</androidx.constraintlayout.widget.ConstraintLayout>

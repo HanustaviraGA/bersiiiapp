@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout7"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".notification">
+
+    <TextView
+        android:id="@+id/txtUpdt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Update"
+        android:textColor="@color/black"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtntf"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtntf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="16dp"
+        android:text="Notification"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/txtUpdt"
+        app:layout_constraintTop_toBottomOf="@+id/txtMyActivity" />
+
+    <View
+        android:id="@+id/underlinegreenntf"
+        android:layout_width="72dp"
+        android:layout_height="3dp"
+        android:background="@color/MainGreen"
+        app:layout_constraintBottom_toBottomOf="@+id/txtUpdt"
+        app:layout_constraintEnd_toEndOf="@+id/txtntf"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/txtntf"
+        app:layout_constraintTop_toBottomOf="@+id/txtUpdt"
+        app:layout_constraintVertical_bias="0.666" />
+
+    <TextView
+        android:id="@+id/txtMyActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Message"
+        android:textColor="@color/black"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

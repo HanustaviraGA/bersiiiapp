@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "715548969474",
+    "project_id": "tough-anvil-314913",
+    "storage_bucket": "tough-anvil-314913.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:715548969474:android:7438c55de40dcabf45f51b",
+        "android_client_info": {
+          "package_name": "com.example.bersiiiiii"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "715548969474-jpheh7sfmp3fe43fakv7lja3tnigm7vr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9cqvGBKuKqe-W31KBY_fGbnHWhoOsom0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "715548969474-jpheh7sfmp3fe43fakv7lja3tnigm7vr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

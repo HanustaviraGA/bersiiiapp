@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Data Kuliah/bersiiiiii/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2495" />
+        <entry key="..\:/Data Kuliah/bersiiiiii/app/src/main/res/drawable/bg1.xml" value="0.2265" />
+        <entry key="..\:/Data Kuliah/bersiiiiii/app/src/main/res/drawable/bg2.xml" value="0.124" />
+        <entry key="..\:/Data Kuliah/bersiiiiii/app/src/main/res/drawable/bg3.xml" value="0.2495" />
+        <entry key="..\:/Data Kuliah/bersiiiiii/app/src/main/res/drawable/bg4.xml" value="0.124" />
+        <entry key="..\:/Data Kuliah/bersiiiiii/app/src/main/res/drawable/circle.xml" value="0.2495" />
+        <entry key="..\:/Data Kuliah/bersiiiiii/app/src/main/res/drawable/custom_btn3.xml" value="0.2495" />
+        <entry key="..\:/Data Kuliah/bersiiiiii/app/src/main/res/drawable/ic__.xml" value="0.123" />
+        <entry key="..\:/Data Kuliah/bersiiiiii/app/src/main/res/drawable/ic_home.xml" value="0.2495" />
+        <entry key="..\:/Data Kuliah/bersiiiiii/app/src/main/res/drawable/ic_home_black_24dp.xml" value="0.2495" />
+        <entry key="..\:/Data Kuliah/bersiiiiii/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2495" />
+        <entry key="..\:/Data Kuliah/bersiiiiii/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.2495" />
+        <entry key="..\:/Data Kuliah/bersiiiiii/app/src/main/res/drawable/ic_logo_bersii.xml" value="0.2495" />
+        <entry key="..\:/Data Kuliah/bersiiiiii/app/src/main/res/layout/activity_cart_activty.xml" value="0.2368659420289855" />
+        <entry key="..\:/Data Kuliah/bersiiiiii/app/src/main/res/layout/activity_dashboard.xml" value="0.264" />
+        <entry key="..\:/Data Kuliah/bersiiiiii/app/src/main/res/layout/activity_log_in.xml" value="0.25416666666666665" />
+        <entry key="..\:/Data Kuliah/bersiiiiii/app/src/main/res/layout/activity_main.xml" value="0.22826086956521738" />
+        <entry key="..\:/Data Kuliah/bersiiiiii/app/src/main/res/layout/activity_menu.xml" value="0.22826086956521738" />
+        <entry key="..\:/Data Kuliah/bersiiiiii/app/src/main/res/layout/activity_menuapp.xml" value="0.152" />
+        <entry key="..\:/Data Kuliah/bersiiiiii/app/src/main/res/layout/activity_my_profile.xml" value="0.264" />
+        <entry key="..\:/Data Kuliah/bersiiiiii/app/src/main/res/layout/activity_policy.xml" value="0.264" />
+        <entry key="..\:/Data Kuliah/bersiiiiii/app/src/main/res/layout/activity_policy_privacy.xml" value="0.3272450532724505" />
+        <entry key="..\:/Data Kuliah/bersiiiiii/app/src/main/res/layout/activity_prdct_bath.xml" value="0.25416666666666665" />
+        <entry key="..\:/Data Kuliah/bersiiiiii/app/src/main/res/layout/activity_prdct_cook.xml" value="0.25416666666666665" />
+        <entry key="..\:/Data Kuliah/bersiiiiii/app/src/main/res/layout/activity_product_baby.xml" value="0.25416666666666665" />
+        <entry key="..\:/Data Kuliah/bersiiiiii/app/src/main/res/layout/activity_productlist.xml" value="0.264" />
+        <entry key="..\:/Data Kuliah/bersiiiiii/app/src/main/res/layout/activity_sign_up.xml" value="0.24010416666666667" />
+        <entry key="..\:/Data Kuliah/bersiiiiii/app/src/main/res/layout/dialog_forgot_change_password.xml" value="0.24230072463768115" />
+        <entry key="..\:/Data Kuliah/bersiiiiii/app/src/main/res/layout/fragment_activity.xml" value="1.9888475836431228" />
+        <entry key="..\:/Data Kuliah/bersiiiiii/app/src/main/res/layout/fragment_blank.xml" value="0.2" />
+        <entry key="..\:/Data Kuliah/bersiiiiii/app/src/main/res/layout/fragment_blank2.xml" value="0.6" />
+        <entry key="..\:/Data Kuliah/bersiiiiii/app/src/main/res/layout/fragment_blank3.xml" value="0.536" />
+        <entry key="..\:/Data Kuliah/bersiiiiii/app/src/main/res/layout/fragment_blank4.xml" value="0.22826086956521738" />
+        <entry key="..\:/Data Kuliah/bersiiiiii/app/src/main/res/layout/fragment_blank5.xml" value="0.264" />
+        <entry key="..\:/Data Kuliah/bersiiiiii/app/src/main/res/layout/fragment_cart.xml" value="0.24139492753623187" />
+        <entry key="..\:/Data Kuliah/bersiiiiii/app/src/main/res/layout/fragment_dashboard.xml" value="0.2" />
+        <entry key="..\:/Data Kuliah/bersiiiiii/app/src/main/res/layout/fragment_home.xml" value="0.264" />
+        <entry key="..\:/Data Kuliah/bersiiiiii/app/src/main/res/layout/fragment_navigation_activity.xml" value="0.24139492753623187" />
+        <entry key="..\:/Data Kuliah/bersiiiiii/app/src/main/res/layout/fragment_notification.xml" value="1.6" />
+        <entry key="..\:/Data Kuliah/bersiiiiii/app/src/main/res/layout/fragment_ongoing.xml" value="2.4" />
+        <entry key="..\:/Data Kuliah/bersiiiiii/app/src/main/res/layout/fragment_product_baby.xml" value="0.11302083333333333" />
+        <entry key="..\:/Data Kuliah/bersiiiiii/app/src/main/res/layout/fragment_product_bath.xml" value="0.264" />
+        <entry key="..\:/Data Kuliah/bersiiiiii/app/src/main/res/layout/fragment_product_breakfast.xml" value="0.11302083333333333" />
+        <entry key="..\:/Data Kuliah/bersiiiiii/app/src/main/res/layout/fragment_product_cook.xml" value="0.4" />
+        <entry key="..\:/Data Kuliah/bersiiiiii/app/src/main/res/layout/layout_cart_item.xml" value="0.25181159420289856" />
+        <entry key="..\:/Data Kuliah/bersiiiiii/app/src/main/res/layout/layput_product_item.xml" value="0.4" />
+        <entry key="..\:/Data Kuliah/bersiiiiii/app/src/main/res/menu/bottom_nav_menu.xml" value="0.25416666666666665" />
+        <entry key="..\:/Data Kuliah/bersiiiiii/app/src/main/res/menu/nav_botom.xml" value="0.25416666666666665" />
+        <entry key="..\:/Data Kuliah/bersiiiiii/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2495" />
+        <entry key="..\:/Data Kuliah/bersiiiiii/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.2495" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
