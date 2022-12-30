@@ -1,23 +1,35 @@
 package com.example.bersiiiiii
 
+import android.annotation.SuppressLint
+import android.content.Context
 import android.os.Bundle
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatDelegate
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.example.bersiiiiii.databinding.ActivityDashboardBinding
+import kotlinx.android.synthetic.main.fragment_home.view.*
 
 class dashboard : AppCompatActivity() {
 
     private lateinit var binding: ActivityDashboardBinding
 
+    @SuppressLint("SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         binding = ActivityDashboardBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        supportActionBar?.hide()
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
+
+        val sharedPreference = getSharedPreferences("USER_DATA", Context.MODE_PRIVATE)
+        val nama = sharedPreference.getString("nama","defaultName").toString()
+        val helohome = binding.root.Helohome
+        helohome.text = "Hello, $nama"
 
         val navView: BottomNavigationView = binding.navView
 
@@ -32,6 +44,6 @@ class dashboard : AppCompatActivity() {
 
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
-        supportActionBar?.hide()
+
     }
 }

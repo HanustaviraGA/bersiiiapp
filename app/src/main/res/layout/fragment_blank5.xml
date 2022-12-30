@@ -41,8 +41,8 @@
         android:textColor="@color/black"
         android:textSize="24dp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/emailregis"
-        app:layout_constraintStart_toStartOf="@+id/emailregis"
+        app:layout_constraintBottom_toTopOf="@+id/nameregis"
+        app:layout_constraintStart_toStartOf="@+id/nameregis"
         app:layout_constraintTop_toBottomOf="@+id/imageView4" />
 
     <Button
@@ -60,7 +60,7 @@
         app:layout_constraintTop_toBottomOf="@+id/checkBox" />
 
     <EditText
-        android:id="@+id/emailregis"
+        android:id="@+id/nameregis"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="33dp"
@@ -69,13 +69,13 @@
         android:ems="10"
         android:hint="Enter your email"
         android:inputType="textEmailAddress"
-        app:layout_constraintBottom_toTopOf="@+id/passregis"
+        app:layout_constraintBottom_toTopOf="@+id/emailregis"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/signuprgtr" />
 
     <EditText
-        android:id="@+id/passregis"
+        android:id="@+id/emailregis"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="33dp"
@@ -84,13 +84,13 @@
         android:ems="10"
         android:hint="Enter your password"
         android:inputType="textPassword"
-        app:layout_constraintBottom_toTopOf="@+id/repassregis"
+        app:layout_constraintBottom_toTopOf="@+id/passregis"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/emailregis" />
+        app:layout_constraintTop_toBottomOf="@+id/nameregis" />
 
     <EditText
-        android:id="@+id/repassregis"
+        android:id="@+id/passregis"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="33dp"
@@ -102,7 +102,7 @@
         app:layout_constraintBottom_toTopOf="@+id/checkBox"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/passregis" />
+        app:layout_constraintTop_toBottomOf="@+id/emailregis" />
 
     <Button
         android:id="@+id/loginbtnregis"
@@ -130,7 +130,7 @@
         android:layout_marginBottom="20dp"
         android:text="@string/checkbox"
         app:layout_constraintBottom_toTopOf="@+id/signupbtnregis"
-        app:layout_constraintStart_toStartOf="@+id/repassregis"
-        app:layout_constraintTop_toBottomOf="@+id/repassregis" />
+        app:layout_constraintStart_toStartOf="@+id/passregis"
+        app:layout_constraintTop_toBottomOf="@+id/passregis" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
