@@ -1,7 +1,6 @@
 package com.example.bersiiiiii
 
 import android.content.Context
-import android.content.DialogInterface
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -26,6 +25,7 @@ class LogIn : AppCompatActivity() {
     private var pass: String? = null
 
     private val url = "https://bersii.my.id/api/login_mobile"
+    private val url2 = "https://bersii.my.id/api/forgot_mobile"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -59,17 +59,19 @@ class LogIn : AppCompatActivity() {
                                 val id = jobject.getString("id")
                                 val nama = jobject.getString("nama")
                                 val email = jobject.getString("email")
-                                val nomor_telepon = jobject.getString("nomor_telepon")
+                                val nomortelepon = jobject.getString("nomor_telepon")
                                 val alamat = jobject.getString("alamat")
                                 val token = jobject.getString("token")
+                                val saldo = jobject.getString("saldo")
                                 val intent = Intent(this@LogIn, dashboard::class.java)
                                 val sharedPreference =  getSharedPreferences("USER_DATA", Context.MODE_PRIVATE)
                                 val editor = sharedPreference.edit()
                                 editor.putString("id",id)
                                 editor.putString("nama",nama)
                                 editor.putString("email",email)
-                                editor.putString("nomor_telepon",nomor_telepon)
+                                editor.putString("nomor_telepon",nomortelepon)
                                 editor.putString("alamat", alamat)
+                                editor.putString("saldo", saldo)
                                 editor.putString("token", token)
                                 editor.apply()
                                 startActivity(intent)
@@ -108,31 +110,54 @@ class LogIn : AppCompatActivity() {
             val view = layoutInflater.inflate(R.layout.dialog_forgot_change_password, null)
             val email = view.findViewById<EditText>(R.id.etEmail)
             builder.setView(view)
-            builder.setPositiveButton("Reset", DialogInterface.OnClickListener{_,_ ->
-//                forgotpassword(email)
-                Toast.makeText(this,"Dalam pengembangan", Toast.LENGTH_SHORT).show()
-            })
-            builder.setNegativeButton("Close", DialogInterface.OnClickListener{_,_ -> })
+            builder.setPositiveButton("Reset") { _, _ ->
+                forgotpassword(email)
+            }
+            builder.setNegativeButton("Close") { _, _ -> }
             builder.show()
         }
-
-        supportActionBar?.hide()
     }
 
-//    private fun forgotpassword(email: EditText) {
-//        if (email.text.toString().isEmpty()){
-//            return
-//        }
-//        if (!Patterns.EMAIL_ADDRESS.matcher(email.text.toString()).matches()){
-//            return
-//        }
-//        firebaseAuth.sendPasswordResetEmail(email.text.toString())
-//            .addOnCompleteListener { task ->
-//                if (task.isSuccessful){
-//                    Toast.makeText(this,"Email sent",Toast.LENGTH_SHORT).show()
-//                }
-//            }
-//    }
+    private fun forgotpassword(email: EditText) {
+        if (email.text.toString().isEmpty()){
+            return
+        }
+        if (!Patterns.EMAIL_ADDRESS.matcher(email.text.toString()).matches()){
+            return
+        }
+        val stringRequest: StringRequest = object : StringRequest(
+            Method.POST,
+            url2,
+            Response.Listener { response ->
+                val data = response.toString()
+                val jArray = JSONArray(data)
+                for(i in 0 until jArray.length()){
+                    val jobject = jArray.getJSONObject(i)
+                    val status = jobject.getString("message")
+                    if(status == "Email Dikirim"){
+                        Toast.makeText(this,"Email sent",Toast.LENGTH_SHORT).show()
+                    }else{
+                        Toast.makeText(this@LogIn, status, Toast.LENGTH_SHORT).show()
+                    }
+                }
+            },
+            Response.ErrorListener { error ->
+                Toast.makeText(
+                    this@LogIn,
+                    error.toString().trim { it <= ' ' },
+                    Toast.LENGTH_SHORT
+                ).show()
+            }) {
+            @Throws(AuthFailureError::class)
+            override fun getParams(): Map<String, String> {
+                val data: MutableMap<String, String> = HashMap()
+                data["email"] = email.toString().trim { it <= ' ' }
+                return data
+            }
+        }
+        val requestQueue = Volley.newRequestQueue(applicationContext)
+        requestQueue.add(stringRequest)
+    }
 
 //    override fun onStart() {
 //        super.onStart()

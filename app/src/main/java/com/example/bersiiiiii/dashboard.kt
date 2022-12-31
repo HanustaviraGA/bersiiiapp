@@ -11,6 +11,7 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.example.bersiiiiii.databinding.ActivityDashboardBinding
+import kotlinx.android.synthetic.main.fragment_home.*
 import kotlinx.android.synthetic.main.fragment_home.view.*
 
 class dashboard : AppCompatActivity() {
@@ -28,8 +29,11 @@ class dashboard : AppCompatActivity() {
 
         val sharedPreference = getSharedPreferences("USER_DATA", Context.MODE_PRIVATE)
         val nama = sharedPreference.getString("nama","defaultName").toString()
+        val saldo = sharedPreference.getString("saldo","defaultSaldo").toString()
         val helohome = binding.root.Helohome
         helohome.text = "Hello, $nama"
+        val saldonom = binding.root.txtMoney
+        saldonom.text = "Rp$saldo"
 
         val navView: BottomNavigationView = binding.navView
 
