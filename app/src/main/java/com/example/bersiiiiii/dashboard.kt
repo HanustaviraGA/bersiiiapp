@@ -2,6 +2,7 @@ package com.example.bersiiiiii
 
 import android.annotation.SuppressLint
 import android.content.Context
+import android.content.Intent
 import android.os.Bundle
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
@@ -11,9 +12,9 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.example.bersiiiiii.databinding.ActivityDashboardBinding
-import kotlinx.android.synthetic.main.fragment_home.*
 import kotlinx.android.synthetic.main.fragment_home.view.*
 
+@Suppress("DEPRECATION")
 class dashboard : AppCompatActivity() {
 
     private lateinit var binding: ActivityDashboardBinding
@@ -30,10 +31,18 @@ class dashboard : AppCompatActivity() {
         val sharedPreference = getSharedPreferences("USER_DATA", Context.MODE_PRIVATE)
         val nama = sharedPreference.getString("nama","defaultName").toString()
         val saldo = sharedPreference.getString("saldo","defaultSaldo").toString()
+
         val helohome = binding.root.Helohome
         helohome.text = "Hello, $nama"
         val saldonom = binding.root.txtMoney
         saldonom.text = "Rp$saldo"
+
+        val qr = binding.root.imageView19
+        qr.setOnClickListener {
+            val intent = Intent(this@dashboard, QRCodeActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
 
         val navView: BottomNavigationView = binding.navView
 

@@ -69,6 +69,7 @@ class LogIn : AppCompatActivity() {
                                 editor.putString("id",id)
                                 editor.putString("nama",nama)
                                 editor.putString("email",email)
+                                editor.putString("password",pass)
                                 editor.putString("nomor_telepon",nomortelepon)
                                 editor.putString("alamat", alamat)
                                 editor.putString("saldo", saldo)

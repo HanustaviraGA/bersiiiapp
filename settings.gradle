@@ -1,15 +1,26 @@
 pluginManagement {
     repositories {
-        gradlePluginPortal()
+        // Make sure that you have the following two repositories
         google()
         mavenCentral()
+        gradlePluginPortal()
+        jcenter()
+        maven {
+            url "https://jitpack.io"
+        }
     }
 }
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS)
     repositories {
+        // Make sure that you have the following two repositories
         google()
         mavenCentral()
+        gradlePluginPortal()
+        jcenter()
+        maven {
+            url "https://jitpack.io"
+        }
     }
 }
 rootProject.name = "bersiiiiii"

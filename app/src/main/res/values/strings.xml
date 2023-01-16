@@ -20,6 +20,11 @@
     <string name="title_Activity">Activity</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+
+    <string name="qr_code">qr_code</string>
+    <string name="enter_your_info">Enter your info</string>
+    <string name="generate_qr_code">Kembali</string>
+
     <string name="help_support"><![CDATA[Help & Support]]></string>
     <string name="privacy_policy"><b>Policy Updated</b> \nPlease read these Terms of Use ( \" Terms \" , \" Terms of Use \" ) carefully before using the www.curenails.co website ( the \" Service \" ) operated by Cure Concept , LLC . ( \" us \" , \" we \" , or \" our \" ) . Your access to and use of the Service is conditioned upon your acceptance of and compliance with these Terms . These Terms apply to all visitors , users and others who wish to access or use the Service . By accessing or using the Service you agree to be bound by these Terms . If you disagree with any part of the terms then you do not have permission to access the Service . \n\n<b>Communications</b> \nBy creating an Account on our service , you agree to subscribe to newsletters , marketing or promotional materials and other information we may send . However , you may opt out of receiving any , or all , of these communications from us by following the unsubscribe link or instructions provided in any email we send .\n\n <b>Purchases</b>\n By creating an Account on our service , you agree to subscribe to newsletters , marketing or promotional materials and other information we may send . However , you may opt out of receiving any , or all , of these communications from us by following the unsubscribe link or instructions provided in any email we send . \n\n<b>Fee Changes</b>\n By creating an Account on our service , you agree to subscribe to newsletters , marketing or promotional materials and other information we may send . However , you may opt out of receiving any , or all , of these communications from us by following the unsubscribe link or instructions provided in any email we send .</string>
 </resources>

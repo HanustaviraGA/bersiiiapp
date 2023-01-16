@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Bersiiiiii">
         <activity
+            android:name=".QRCodeActivity"
+            android:exported="false" />
+        <activity
             android:name=".PolicyPrivacy"
             android:exported="false" />
         <activity
